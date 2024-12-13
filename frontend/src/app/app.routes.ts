@@ -8,7 +8,11 @@ export const routes: Routes = [
     component: HomepageComponent,
   },
   {
-    path: 'dashboard',
+    path: 'liste-paginee',
+    component: ChartPageComponent,
+  },
+  {
+    path: 'visualisation',
     component: ChartPageComponent,
   },
 ];

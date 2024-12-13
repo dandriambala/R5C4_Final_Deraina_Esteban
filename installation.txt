@@ -1,0 +1,13 @@
+Lancer le backend :
+    -Si vous n'avez pas fait les installations
+        -pip install flask
+        -pip install CORS
+    -se mettre dans le dossier backend
+    - lancer la commande ' flask run ' dans le terminal
+
+Lancer le frontend Angular v17:
+    -se mettre dans le dossier frontend
+    -dans le terminal lancer la commande ' npm install ' afin de pouvoir lancer le projet angular
+    -Afin de lancer le serveur Angular --> ng serveur
+
+Afin de pouvoir visualiser les données il faut que le back soit lancer.

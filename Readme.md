@@ -72,7 +72,7 @@ Pour le type de déplacement, il existe deux valeurs, représentant respectiveme
 - Créer une application Angular v17
 - Créer un type représentant une recherche
 - Il y a 3 pages disponibles, reliées par une navigation commune:
-
+provideHttpClient
   1. Page d'accueil
 
   - Mettez un titre et un paragraphe de lorem ipsum sur la page

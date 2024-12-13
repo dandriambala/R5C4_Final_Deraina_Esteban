@@ -18,7 +18,7 @@ def add_search(search_data):
 
 def update_search(search_id, search_data):
     searches = load_data(DATA_PATH)
-    search = next((c for c in searches if c['search_id'] == search_id), None)
+    search = next((c for c in searches if c['id'] == search_id), None)
     if search:
         search.update(search_data)
         save_data(DATA_PATH, searches)

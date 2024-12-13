@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify, request, abort
 from services import search_service
 
-search_bp = Blueprint('search', __name__)
+search_bp = Blueprint('searches', __name__)
 
 @search_bp.route('/searches', methods=['GET'])
 def get_all_searches():

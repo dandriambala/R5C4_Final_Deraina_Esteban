@@ -1,1 +1,11 @@
-<p>graphiques works!</p>
+<h2>Des chiffres clés par algorithme </h2>
+
+<ngx-charts-number-card [results]="resultQ1" [view]="view"></ngx-charts-number-card>
+
+<h2>Temps d'execution moyen de chaque algorithme</h2>
+<ngx-charts-bar-vertical [results]="resultQ2" [view]="view" [xAxis]="true" [yAxis]="true" [xAxisLabel]="xAxisLabel"
+[yAxisLabel]="yAxisLabel" [showXAxisLabel]="true" [showYAxisLabel]="true"></ngx-charts-bar-vertical>
+
+<h2>Nombre moyen de noeuds visités par algorithme</h2>
+<ngx-charts-bar-vertical [results]="resultQ3" [view]="view" [xAxis]="true" [yAxis]="true" [xAxisLabel]="xAxisLabel2"
+[yAxisLabel]="yAxisLabel2" [showXAxisLabel]="true" [showYAxisLabel]="true"></ngx-charts-bar-vertical>

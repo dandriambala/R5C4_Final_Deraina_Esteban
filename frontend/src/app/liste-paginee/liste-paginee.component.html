@@ -1,1 +1,25 @@
-<p>liste-paginee works!</p>
+<h1>Liste des propriétés des recherches </h1>
+
+<div>
+    <button (click)="previousPage()" [disabled]="currentPage === 1">Précédent</button>
+    Page {{currentPage}} sur {{maxPage}}
+    <button (click)="nextPage()" [disabled]="currentPage >= maxPage">Suivant</button>
+</div>
+
+@for(search of paginatedSearches; track $index){
+<div>
+    <p>
+      ID: {{ search.id }} <br />
+      Algorithme: {{ search.algorithm }} <br />
+      Largeur de la grille: {{ search.grid_width }} <br />
+      Longueur de la grille: {{ search.grid_height }} <br />
+      Début du chemin: {{ search.start }} <br />
+      Fin du chemin: {{ search.end }} <br />
+      Type de déplacement: {{ search.move_type }} <br />
+      Longueur du chemin: {{ search.path_length }} <br />
+      Noeuds visités: {{ search.visited_nodes }} <br />
+      Temps d'execution: {{ search.time_ns }} <br />
+
+    </p>
+</div>
+}

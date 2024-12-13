@@ -1,0 +1,18 @@
+<h2>Répartition des utilisateurs satisfaits par compagnie</h2>
+<ngx-charts-pie-chart [results]="resultByCompany" [view]="view" [explodeSlices]="false" [doughnut]="true"
+  [gradient]="false" [legend]="true" [legendTitle]="'Compagnie'" [labels]="true"></ngx-charts-pie-chart>
+
+<h2>Répartition des utilisateurs satisfaits par genre</h2>
+<ngx-charts-advanced-pie-chart [results]="resultByGender" [view]="view"
+  [gradient]="false"></ngx-charts-advanced-pie-chart>
+
+<h2>Répartition des utilisateurs satisfaits par destination</h2>
+
+<p>Lire: Parmi l'ensemble des voyageurs satisfaits, quelle part est allée à quel endroit</p>
+<p>Ex: Parmi tous les voyageurs satisfaits, 10% étaient des voyageurs pour Venus Clouds</p>
+<p style="color: gray;">Notez que cette donnée n'est pas partinente car on ne comprend pas ce qu'elle veut
+  dire.
+  Sans explication il est difficile de comprendre ce qu'elle représente.
+</p>
+
+<ngx-charts-pie-grid [results]="resultByDestination" [view]="view"></ngx-charts-pie-grid>
